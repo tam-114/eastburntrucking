@@ -1,3 +1,12 @@
+@media only screen and (max-width: 474px) {
+    img.col-sm-6.float-sm-end.mb-3.ms-sm-3.me-3.resizeImg  {
+      width: 300px!important;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
 .bg-img {
     background-image: url('/images/3-trucks.jpg');
     height: 600px;
