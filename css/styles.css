@@ -7,11 +7,29 @@
     }
   }
 
-.bg-img {
+/* .bg-img {
     background-image: url('/images/3-trucks.jpg');
     height: 600px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+} */
+
+.rect-box {
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.list-group .list-group-item {
+  border: none!important;
+  padding-left: 0px!important;
+  line-height: 12px!important;
+}
+
+.contact-info {
+  line-height: 5px;
+  font-weight: 600!important;
 }
