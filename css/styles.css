@@ -30,11 +30,22 @@
 }
 
 .contact-info {
-  line-height: 5px;
+  line-height: 7px;
   font-weight: 600!important;
 }
 
 a.footer-links {
   text-decoration: none!important;
   color: white!important;
+  padding: 10px;
+  font-weight: 500;
+  font-size: large;
+}
+
+textarea.form-control {
+  min-width: 100%!important;
+}
+
+.footer-contact {
+  color: white;
 }
