@@ -1,14 +1,13 @@
 @media only screen and (max-width: 474px) {
-    img.col-sm-6.float-sm-end.mb-3.ms-3.me-3.resizeImg  {
-      width: 300px!important;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
     .col {
       flex: none!important;
     }
   }
+
+.res-img {
+   width: 100%;
+   height: auto;
+}
 
 .rect-box {
     width: 500px;
