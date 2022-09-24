@@ -16,6 +16,10 @@
     margin-top: 50px;
 }
 
+p.font {
+  font-size: 20px;
+}
+
 .list-group .list-group-item {
   border: none!important;
   padding-left: 0px!important;
