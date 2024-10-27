@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eastburn Trucking & Logistics</title>
 
+    <!-- ------------- Bootstrap ------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <!-- -------------- CSS ----------------- -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 
-    <!-- ------------- Bootstrap ------------- -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   
     <!-- -------------- AOS Library ----------- -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ----------------- Google Fonts ------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -25,23 +30,21 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-                    <a class="nav-link active ms-1 me-1" aria-current="page" href="#home">Home</a>
-                    <a class="nav-link ms-1 me-1" href="#aboutus">About Us</a>
-                    <a class="nav-link ms-1 me-3" href="#services">Services</a>
-                    <a href="#contact" style="color: white; text-decoration: none;">
-                      <button class="btn btn-primary me-2 w-100" type="button">
-                        Contact Now
-                      </button>
-                    </a>
-                    
-                    
+                <a class="nav-link active ms-1 me-1" aria-current="page" href="#home">Home</a>
+                <a class="nav-link ms-1 me-1" href="#aboutus">About Us</a>
+                <a class="nav-link ms-1 me-3" href="#services">Services</a>
+                <a href="#contact" style="color: white; text-decoration: none;">
+                  <button class="cta-button" type="button">
+                    Contact Now
+                  </button>
+                </a>
             </div>
           </div>
         </div>
       </nav>
 
     <!-- Hero -->
-    <div class="p-5 text-center bg-image" style="
+    <!-- <div class="p-5 text-center bg-image" style="
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('images/3-trucks.jpg');
     height: 600px;
@@ -50,109 +53,175 @@
     background-repeat: no-repeat;
     background-position: center;"
     >    
-            <div class="d-flex justify-content-center align-items-center h-100">
-                <div class="text-white">
-                    <h1 class="display-1 mb-3">Eastburn Trucking & Logistics</h1>
-                    <!-- <h4 class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>  -->
-                    <h3 class="mb-5"><em>Give us a call for your next shipment</em></h4>
-                    <a class="btn btn-primary btn-lg" href="#contact" role="button" style="color: white;">Contact Us</a>
-                </div>
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+                <h1 class="display-1 mb-3">Eastburn Trucking & Logistics</h1>
+                <h3 class="mb-5"><em>Give us a call for your next shipment</em></h4>
+                <a class="btn btn-primary btn-lg" href="#contact" role="button" style="color: white;">Contact Us</a>
             </div>
+        </div>
+    </div> -->
+    <div class="hero-video">
+      <video id="heroVideo" autoplay muted loop playsinline>
+          <source src="videos/trucking_hero.mp4" type="video/mp4">
+          <!-- <source src="your-video-file.webm" type="video/webm"> -->
+          <!-- Fallback for unsupported browsers -->
+          Your browser does not support the video tag.
+      </video>
+      <div class="overlay p-1 p-sm-3">
+        <div class="d-flex justify-content-start align-items-start flex-column text-start p-3">
+          <h1 class="">Eastburn Trucking <br>& Logistics</h1>
+          <p class="pt-2 pb-2"> <em> Driven by Precision, Fueled by Trust </em> </p>
+          <a href="tel:9542261625" class="cta-button">Call Us</a>
+        </div>
+      </div>
+       <!-- Custom Play/Pause Button -->
+    <button id="playPauseButton" class="play-pause-button" aria-label="Pause">
+      <i class="fa-solid fa-pause"></i>
+      <i class="fa-solid fa-play" style="display: none;"></i> <!-- Hidden by default -->
+  </button>
+  
     </div>
+  
 
 <!-- About Us -->
-<div class="container pb-5 pt-5">
-  <div class="row">
-    <div class="col-md-6 pt-3">
-      <p class="h6 pt-3" style="color: rgb(51, 120, 248);" id="aboutus">WHO WE ARE</p>
-      <div data-aos="zoom-in-right">
-        <p class="display-1 pb-3">About Us</p>
-        <p style="font-size: 22px;">Eastburn Trucking & Logistics is a Florida-based company located in Ft. Lauderdale, Florida. The founder, Edwin Rosa, has over 34 years of experience in the trucking industry, bringing skills, knowledge, and expertise to the business.</p>
-        
+ <section class="travel-lines_bg">
+  <div class="container pb-5 pt-5">
+    <div class="row">
+      <div class="col-md-6 pt-3">
+        <h6 class="h6 pt-3" id="aboutus">ABOUT US</h6>
+        <div class="text-color" data-aos="zoom-in-right">
+          <h1 class="oswlad-regular section-title">Who We Are</h1>
+          <p class="pt-3">Eastburn Trucking & Logistics is a Florida-based company located in Ft. Lauderdale, Florida. The founder, Edwin Rosa, has over 34 years of experience in the trucking industry, bringing skills, knowledge, and expertise to the business. Edwin understands the ins and outs of freight transportation, ensuring that goods are delivered safely and on time. His commitment to quality service has helped the company build a strong reputation for reliability and great customer care.
+          <br><br>
+          We work hard to ensure that deliveries are made quickly and efficiently, always putting the needs of the customer first. The company prides itself on its ability to handle urgent shipments and maintain clear communication throughout the delivery process. As Eastburn Trucking continues to grow, it remains focused on delivering outstanding service and fostering strong relationships with clients, making it a trusted choice for businesses in Florida and beyond.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-6 pt-3">
-      <div data-aos="zoom-in-left">
-        <img src="images/truck-landscape.jpg" alt="White truck with mountain background" class=" res-img">
+      <div class="col-md-6 pt-3 d-flex justify-content-center align-items-center justify-content-lg-end align-items-lg-end ">
+        <div data-aos="zoom-in-left">
+          <img src="images/trucks-inline.png" alt="" class=" res-img">
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
 <!-- Why Choose Us? -->
-<div class="container-fluid" style="background-color: rgb(96, 149, 246); color: white;">
+<section class="blue_gradient-bg py-4">
+<div class="container-fluid" >
     <div class="pt-5 text-center">
-        <p class="h6" style="color: black;">OUR PROMISES</p>
-        <p class="display-3 pt-3">Why Choose Us?</p>
+        <h6 class="h6 c-white">OUR PROMISES</h6>
+        <h1 class="oswlad-regular">Why Choose Us?</h1>
     </div>
-    <div class="container text-center">
-        <div class="row pt-4 pb-5">
-          <div class="col-sm-4">
-            <img src="images/icons/flash.png" alt="Lightning bolt flash icon" width="50px" height="50px" class="mb-4">
-            <p class="h4">Fast Delivery</p>
+    <div class="container">
+        <div class="row gx-5 pt-5 pb-5 roboto-regular">
+          <div class="col-sm-4 border-left" data-aos="fade-up" data-aos-duration="800">
+            <img src="images/icons/flash2.png" alt="Lightning bolt flash icon" width="50px" height="50px" class="mb-4">
+            <h4 class="h4">Fast Delivery</h4>
             <p class="font">We guarantee to get your products from point A to point B as fast as possible.</p>
           </div>
-          <div class="col-sm-4">
-            <img src="images/icons/handshake.png" alt="Handshake icon" width="50px" height="50px" class="mb-4">
-            <p class="h4">Good People</p>
+          <div class="col-sm-4 border-left" data-aos="fade-up" data-aos-duration="1200">
+            <img src="images/icons/handshake2.png" alt="Handshake icon" width="50px" height="50px" class="mb-4">
+            <h4 class="h4">Good People</h4>
             <p class="font">We pride ourselves on having the best people on our team to meet your goals.</p>
           </div>
-          <div class="col-sm-4">
-            <img src="images/icons/secure-shield.png" alt="Secure shield icon" width="50px" height="50px" class="mb-4">
-            <p class="h4">Dependable</p>
+          <div class="col-sm-4 border-left" data-aos="fade-up" data-aos-duration="1500">
+            <img src="images/icons/dependable2.png" alt="Secure shield icon" width="50px" height="50px" class="mb-4">
+            <h4 class="h4">Dependable</h4>
             <p class="font">We ensure your products are in trusted hands to keep it all safe and sound.</p>
           </div>
         </div>
       </div>
 </div>
+</section>
 
 <!-- Services -->
-<div class="container text-center mt-5 mb-5" id="services">
-    <div class="row">
-      <div class="col-sm-4 mt-4">
-       <div data-aos="zoom-in-up">
-        <img src="images/freight-broker.jpg" alt="freight broker image" width="250px" height="200px">
-        <p class="h5 pt-3 pb-3">Freight Brokering</p>
-        <p class="font">We are the central point of contact between shippers and carriers, we use our networks to move shipments fast and efficiently.</p>
-        <!-- <a class="btn btn-secondary btn-md" href="#!" role="button">Learn More</a> -->
-       </div>
+ <section class="mb-5">
+  <!-- ----------------- CARDS ------------------ -->
+  <div class="cards-container">
+    <!-- Card 1 -->
+    <div class="card" data-aos="fade-up" data-aos-duration="800">
+      <div class="card-img">
+        <img src="images/freight-broker2.png" alt="freight broker image" class="img-fluid">
       </div>
-      <div class="col-sm-4 mt-4">
-       <div data-aos="zoom-in-up">
-        <img src="images/hauling-freights.jpg" alt="hauling freight image" width="250px" height="200px">
-        <p class="h5 pt-3 pb-3">Hauling Freights</p>
-        <p class="font">Here at Eastburn Trucking & Logistics, the goal is to meet any of your transportation needs with our Flatbed Trucks and dedication to our customers.</p>
-        <!-- <a class="btn btn-secondary btn-md" href="#!" role="button">Learn More</a> -->
-       </div>
+
+      <div class="p-3">
+        <h3>Freight Brokering</h3>
+        <p>We are the central point of contact between shippers and carriers, using our networks to move shipments fast and efficiently.</p>
+        <a href="#">Meet Our Brokers</a>
       </div>
-      <div class="col-sm-4 mt-4">
-       <div data-aos="zoom-in-up">
-        <img src="images/dispatching.jpg" alt="dispatching image" width="250px" height="200px">
-        <p class="h5 pt-3 pb-3">Dispatching</p>
-        <p class="font">Do you need a dispatcher to coordinate your transportation routes? We offer a dispatching service for a seamless transportation process.</p>
-        <!-- <a class="btn btn-secondary btn-md" href="#!" role="button">Learn More</a> -->
-       </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" data-aos="fade-up" data-aos-duration="1200">
+      <div class="card-img">
+        <img src="images/hauling-freights2.png" alt="freight broker image" class="img-fluid">
+      </div>
+
+      <div class="p-3">
+        <h3>Hauling Freights</h3>
+        <p>Here at Eastburn Trucking & Logistics, we aim to meet any of your transportation needs with our flatbed trucks and commitment to our customers.</p>
+        <a href="#">Transport with Us</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card-img">
+        <img src="images/dispatcher.png" alt="freight broker image" class="img-fluid">
+      </div>
+
+      <div class="p-3">
+        <h3>Dispatching</h3>
+        <p>Do you need a dispatcher to coordinate your transportation routes? We offer dispatching for a seamless transportation process.</p>
+        <a href="#">Call for Dispatching</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card" data-aos="fade-up" data-aos-duration="1800">
+      <div class="card-img">
+        <img src="images/warehouse.png" alt="freight broker image" class="img-fluid">
+      </div>
+
+      <div class="p-3">
+        <h3>Warehousing Solutions</h3>
+        <p>We offer secure warehousing options, giving you flexibility and peace of mind for your goods during transit and storage.</p>
+        <a href="#">Explore Solutions</a>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- ESTIMATION/SPECIALS/PROMOS -->
-    <div class="container-fluid d-flex justify-content-center mt-5" style="background-image: url('images/road.jpg');
-    height: 300px;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;">
-        <div class="rect-box d-flex align-items-center justify-content-center">
-            <div class="text-center">
-            <p class="h6" style="color: rgb(51, 120, 248);">GIVE US A CALL</p>
-            <p class="h4 pt-2 pe-2 ps-2">Dial (954) 226 - 1625 for the best available pricing on your next shipment</P>
-            </div>
-        </div>
+
+    
+
+<!-- ------------------ BANNER --------------- -->
+<div class="banner">
+  <video id="bannerVideo" class="banner-video" autoplay muted loop playsinline>
+    <source src="videos/trucking_banner.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay2">
+    <div class="text-content">
+      <h6 class="h6 mb-0">GIVE US A CALL</h6>
+      <p class="h4 pb-3" style="font-size: 16px;">Dial (954) 226 - 1625 for the best pricing on your next shipment! </p>
+      <a href="tel:9542261625" class="cta-button">Call Us</a>
     </div>
+  </div>
+
+  <button id="playPauseButton2" class="play-pause-button" aria-label="Pause">
+    <i class="fa-solid fa-pause"></i>
+    <i class="fa-solid fa-play" style="display: none;"></i>
+</button>
+</div>
+
+
+
 
 <!-- Quote -->
-<div class="pt-5 pb-5 text-center" style="background-color: lightgray;">
-    <!-- <img src="images/icons/person.png" alt="person icon" height="50px" width="50px"> -->
+<!-- <div class="pt-5 pb-5 text-center" style="background-color: lightgray;">
     <figure class="text-center">
         <blockquote class="blockquote pt-2">
         <p class="font p-2">
@@ -165,90 +234,90 @@
         Edwin Rosa <cite title="Source Title">CEO, Founder</cite>
         </figcaption>
     </figure>
-</div>
+</div> -->
 
 <!-- Contact -->
-<div class="container mt-5 mb-5" id="contact">
-  <div class="row">
-    <div class="col">
-      <p class="h6" style="color: rgb(51, 120, 248);">GET IN TOUCH</p>
-      <p class="display-2 pt-2 pb-2">Contact Us</p>
-      <p class="h5 pb-2" style="color: black;">Hours of Operation</p>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Sunday: 8:00 AM &#8212; 12:00 PM</li>
-          <li class="list-group-item">Monday: 8:00 AM &#8212; 6:00 PM</li>
-          <li class="list-group-item">Tuesday: 8:00 AM &#8212; 6:00 PM</li>
-          <li class="list-group-item">Wednesday: 8:00 AM &#8212; 6:00 PM</li>
-          <li class="list-group-item">Thursday: 8:00 AM &#8212; 6:00 PM</li>
-          <li class="list-group-item">Friday: 8:00 AM &#8212; 6:00 PM</li>
-          <li class="list-group-item">Saturday: 8:00 AM &#8212; 12:00 PM</li>
-        </ul>
-      <div class="mt-4 contact-info">
-        <p class="pb-1">Phone: (954) 226 &#8211; 1625</p>
-        <p style="word-wrap: break-word; line-height: 20px;" class="pb-1">Email: erosa@eastburntrucking.com</p>
-        <p>2598 E Sunrise Blvd,</p>
-        <p >Suite 2104,</p>
-        <p>Ft. Lauderdale, FL 33304</p>
+<section class="travel-lines_bg">
+  <div class="container mt-5 mb-5" id="contact">
+    <div class="row">
+      <div class="col">
+        <h6 class="h6">GET IN TOUCH</h6>
+        <h1 class="pt-1 section-title">Contact Us</h1>
+        <p class="h5 text-color mt-4">Hours of Operation</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Sunday:</strong><br> 8:00 AM - 12:00 PM</li>
+            <li class="list-group-item"><strong>Monday - Friday:</strong><br> 8:00 AM - 6:00 PM</li>
+            <li class="list-group-item"><strong>Saturday:</strong><br> 8:00 AM - 12:00 PM</li>
+          </ul>
+        <div class="mt-4 contact-info">
+          <p class="h5 text-color pb-3">How to Reach Us</p>
+          <p class="pb-1"><strong>Phone:</strong> (954) 226 &#8211; 1625</p>
+          <p style="word-wrap: break-word; line-height: 20px;" class="pb-1"><strong>Email:</strong> erosa@eastburntrucking.com</p>
+          <p><strong>Address:</strong></p>
+          <p>2598 E Sunrise Blvd,</p>
+          <p >Suite 2104,</p>
+          <p>Ft. Lauderdale, FL 33304</p>
+        </div>
+      </div>
+
+      <!-- Contact Us Form -->
+      <div class="col">
+        <form
+          action="https://formspree.io/f/xnqrddbr"
+          method="POST"
+          >
+          <!-- Name Field -->
+          <div class="pb-1">
+            <label for="name" class="col-form-label" style="font-weight: 500;">
+              Name
+              <span style="color: red;">&#42;</span>
+            </label>
+          </div>
+            <div class="row g-3 align-items-center pb-3">
+              <div class="col-md-6">
+                <input type="name" id="firstName" class="form-control" aria-describedby="firstName" name="firstName" required>
+                <span id="firstNameHelp" class="form-text">
+                  First
+                </span>
+              </div>
+              <div class="col-md-6">
+                <input type="name" id="lastName" class="form-control" aria-describedby="lastName" name="lastName" required>
+                <span id="lastNameHelp" class="form-text">
+                  Last
+                </span>
+              </div>
+            </div>
+
+            <!-- Email Field -->
+            <div class="pb-3">
+              <label for="name" class="form-label" style="font-weight: 500;">
+                Email Address
+                <span style="color: red;">&#42;</span>
+              </label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required>
+            </div>
+            <!-- Phone Number -->
+            <div class="pb-3">
+              <label for="tel" class="form-label" style="font-weight: 500;">
+                Phone Number
+                <span style="color: red;">&#42;</span>
+              </label>
+              <input type="tel" class="form-control" id="tel" aria-describedby="email" placeholder="xxx-xxx-xxx" name="phone">
+            </div>
+            <!-- Additional Comments -->
+            <div class="pb-3">
+              <label for="comments" class="form-label" style="font-weight: 500; min-width: 100%;">
+                Send Us a Message:
+                <!-- <span style="color: red;">&#42;</span> -->
+                <textarea class="form-control" id="textArea" rows="3" name="message"></textarea>
+              </label>
+            </div>
+          <button type="submit" class="cta-button" value="submit">Submit</button>
+        </form>
       </div>
     </div>
-
-    <!-- Contact Us Form -->
-    <div class="col">
-      <form
-        action="https://formspree.io/f/xnqrddbr"
-        method="POST"
-        >
-        <!-- Name Field -->
-        <div class="pb-1">
-          <label for="name" class="col-form-label" style="font-weight: 500;">
-            Name
-            <span style="color: red;">&#42;</span>
-          </label>
-        </div>
-          <div class="row g-3 align-items-center pb-3">
-            <div class="col-md-6">
-              <input type="name" id="firstName" class="form-control" aria-describedby="firstName" name="firstName" required>
-              <span id="firstNameHelp" class="form-text">
-                First
-              </span>
-            </div>
-            <div class="col-md-6">
-              <input type="name" id="lastName" class="form-control" aria-describedby="lastName" name="lastName" required>
-              <span id="lastNameHelp" class="form-text">
-                Last
-              </span>
-            </div>
-          </div>
-
-          <!-- Email Field -->
-          <div class="pb-3">
-            <label for="name" class="form-label" style="font-weight: 500;">
-              Email Address
-              <span style="color: red;">&#42;</span>
-            </label>
-            <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required>
-          </div>
-          <!-- Phone Number -->
-          <div class="pb-3">
-            <label for="tel" class="form-label" style="font-weight: 500;">
-              Phone Number
-              <span style="color: red;">&#42;</span>
-            </label>
-            <input type="tel" class="form-control" id="tel" aria-describedby="email" placeholder="xxx-xxx-xxx" name="phone">
-          </div>
-          <!-- Additional Comments -->
-          <div class="pb-3">
-            <label for="comments" class="form-label" style="font-weight: 500; min-width: 100%;">
-              Write a Message:
-              <!-- <span style="color: red;">&#42;</span> -->
-              <textarea class="form-control" id="textArea" rows="3" name="message"></textarea>
-            </label>
-          </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
   </div>
-</div>
+</section>
 
 <!-- Footer -->
 <footer style="background-color: rgb(29, 29, 29);
@@ -291,6 +360,7 @@ border-top-right-radius: 50% 16px;">
       </div>
     </div>
   </div>
+  <p class="d-flex justify-content-end align-items-end author-text pe-3">All Rights Reserved |&nbsp;<a href="https://taystan.dev/" class="author">Taystan</a>&nbsp;&copy;</p>
 </footer>
 <!-- ----------- Bootstrap JS ---------------- -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -301,5 +371,11 @@ border-top-right-radius: 50% 16px;">
 <script>
   AOS.init();
 </script>
+
+<!-- --------------JS -------------------- -->
+<script src="js/script.js"></script>
+
+<!-- ------------- FontAwesome ----------- -->
+<script src="https://kit.fontawesome.com/572bc1bb94.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,3 +1,477 @@
+:root {
+  --primary: #003366;
+  --accent: #fd7d06;
+  --bg-color: #F5F5F5;
+  --text-color: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden!important;
+  width: 100%;
+}
+
+
+/* ============= Headings ============= */
+.oswald-extralight {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.oswald-light {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.oswald-regular {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-medium {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.oswald-semibold {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.oswald-bold {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* =========== Paragraph Text =========== */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.c-white {
+  color: #fff;
+}
+
+/* ============= Video ============ */
+.hero-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background: url('/images/3-trucks.jpg') center center / cover no-repeat;
+}
+
+.hero-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 105vw;
+  /* max-width: 100%; */
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+.overlay {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  /* padding: 20px; */
+  width: 500px;
+  max-width: 90%;
+  text-align: left;
+  height: auto;
+  overflow-x: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 2.5rem;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.overlay p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background-color: rgb(253 125 6 / 60%);
+  color: white;
+}
+
+button.cta-button {
+  border: none;
+}
+
+/* ============== Video Controls ================ */
+
+.play-pause-button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.play-pause-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* ============== Underline ================ */
+.section-title {
+  position: relative;
+  font-size: 3rem;
+  padding-bottom: 5px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.4s ease;
+}
+
+.section-title.underline-visible::after {
+  animation: underlineAnimation 1.5s ease forwards;
+}
+
+@keyframes underlineAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+/* =============== Subtitle ============== */
+h6 {
+  color: rgb(51, 120, 248);
+}
+
+.travel-lines_bg {
+  background-image: url(/images/travel_lines-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+/* =========== OUR PROMISES ============= */
+.blue_gradient-bg {
+  background: linear-gradient(to top, #fff, rgb(96, 149, 246)); 
+  color: var(--text-color);
+}
+
+.border-left {
+  border-left-color: #fd7d06;
+  border-left-style: dashed;
+  border-left-width: 1px;
+}
+
+
+/* ============ CARDS ================= */
+/* Container styles */
+.staggered-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+  grid-auto-rows: auto; /* Allow cards of varying height */
+}
+
+/* Card styles */
+.card {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .staggered-grid {
+    grid-template-columns: 1fr; /* Switch to one column */
+  }
+}
+
+
+/* =================== STRIPE CARDS ==================== */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  flex: 1 1 calc(50% - 20px);
+  /* max-width: 400px; */
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card a {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: #0070f3;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover p {
+  transform: translateY(-10px); /* Shift paragraph text up */
+}
+
+.card:hover a {
+  opacity: 1;
+  transform: translateY(0); /* Bring the link up and reveal it */
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+.card-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 4px 4px;
+
+}
+
+.card-img img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+
+
+/* =================== BANNER ==================== */
+/* Wrapper for the banner */
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 300px;
+  overflow: hidden;
+  background: url('/images/road.jpg') center center / cover no-repeat;
+}
+
+/* Video styling */
+.banner-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay styling */
+.overlay2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 25px 30px;
+}
+
+/* Text content inside the overlay */
+.text-content {
+  color: #333;
+  text-align: center;
+}
+
+.text-content h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.text-content p {
+  font-size: 1em;
+  margin: 10px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 474px) {
     .col {
       flex: none!important;
@@ -28,7 +502,7 @@ p.font {
 
 .contact-info {
   line-height: .5;
-  font-weight: 600!important;
+  /* font-weight: 600!important; */
 }
 
 a.footer-links {
@@ -45,4 +519,16 @@ textarea.form-control {
 
 .footer-contact {
   color: white;
+}
+
+.author, .author-text {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.author:hover {
+  color: inherit;
+  text-decoration: underline;
 }
