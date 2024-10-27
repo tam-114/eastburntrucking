@@ -330,8 +330,8 @@ h6 {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
+  gap: 40px;
+  padding: 40px;
   justify-content: center;
 }
 
