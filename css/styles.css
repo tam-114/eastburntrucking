@@ -151,6 +151,12 @@ p {
   color: #fff;
 }
 
+.navbar {
+  font-family: "Oswald", sans-serif;
+}
+
+
+
 /* ============= Video ============ */
 .hero-video {
   position: relative;
@@ -211,6 +217,7 @@ p {
   border-radius: 5px;
   transition: background-color 0.3s;
   text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
 }
 
 .cta-button:hover {
@@ -269,7 +276,37 @@ button.cta-button {
     width: 0;
   }
   100% {
-    width: 40%;
+    width: 35%;
+  }
+}
+
+.section-title2 {
+  position: relative;
+  font-size: 3rem;
+  padding-bottom: 5px;
+}
+
+.section-title2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.4s ease;
+}
+
+.section-title2.underline-visible2::after {
+  animation: underlineAnimation2 1.5s ease forwards;
+}
+
+@keyframes underlineAnimation2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 32%;
   }
 }
 
@@ -299,33 +336,7 @@ h6 {
 }
 
 
-/* ============ CARDS ================= */
-/* Container styles */
-.staggered-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px; /* Space between items */
-  padding: 20px;
-  grid-auto-rows: auto; /* Allow cards of varying height */
-}
-
-/* Card styles */
-.card {
-  background-color: #3498db;
-  color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .staggered-grid {
-    grid-template-columns: 1fr; /* Switch to one column */
-  }
-}
-
-
-/* =================== STRIPE CARDS ==================== */
+/* =================== CARDS ==================== */
 
 .cards-container {
   display: flex;
@@ -371,7 +382,7 @@ h6 {
   position: absolute;
   bottom: 15px;
   left: 20px;
-  color: #0070f3;
+  color: var(--accent);
   font-weight: bold;
   text-decoration: none;
   opacity: 0;

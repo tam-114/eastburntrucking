@@ -58,3 +58,19 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('scroll', handleScroll);
   });
   
+  document.addEventListener("DOMContentLoaded", () => {
+    const titles = document.querySelectorAll('.section-title2');
+  
+    const handleScroll = () => {
+      titles.forEach(title => {
+        const rect = title.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.8 && rect.bottom >= 0) {
+          title.classList.add('underline-visible2');
+        } else {
+          title.classList.remove('underline-visible2');
+        }
+      });
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  });
