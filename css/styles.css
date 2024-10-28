@@ -155,7 +155,9 @@ p {
   font-family: "Oswald", sans-serif;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 /* ============= Video ============ */
 .hero-video {
@@ -528,6 +530,12 @@ textarea.form-control {
   min-width: 100%!important;
 }
 
+.footer_top {
+  background-color: rgb(29, 29, 29);
+  border-top-left-radius: 50% 16px;
+  border-top-right-radius: 50% 16px;
+}
+
 .footer-contact {
   color: white;
 }
@@ -542,4 +550,9 @@ textarea.form-control {
 .author:hover {
   color: inherit;
   text-decoration: underline;
+}
+
+.author-icon {
+  padding-bottom: 4px;
+  padding-right: 2px;
 }
