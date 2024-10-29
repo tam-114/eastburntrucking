@@ -138,6 +138,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 p {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -323,6 +327,16 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .travel-lines_bg {
+    background-image: url(/images/travel_lines-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 100%;
+  }
 }
 
 /* =========== OUR PROMISES ============= */
