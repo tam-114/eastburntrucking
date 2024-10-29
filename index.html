@@ -265,38 +265,38 @@
       <!-- Contact Us Form -->
       <div class="col">
         <form
-          action="https://formspree.io/f/xnqrddbr"
+          action=""
           method="POST"
           >
           <!-- Name Field -->
           <div class="pb-1">
-            <label for="name" class="col-form-label" style="font-weight: 500;">
+            <span for="name" class="col-form-label" style="font-weight: 500;">
               Name
               <span style="color: red;">&#42;</span>
-            </label>
+            </span>
           </div>
             <div class="row g-3 align-items-center pb-3">
               <div class="col-md-6">
                 <input type="name" id="firstName" class="form-control" aria-describedby="firstName" name="firstName" required>
-                <span id="firstNameHelp" class="form-text">
+                <label id="firstName" class="form-text" for="firstName">
                   First
-                </span>
+                </label>
               </div>
               <div class="col-md-6">
                 <input type="name" id="lastName" class="form-control" aria-describedby="lastName" name="lastName" required>
-                <span id="lastNameHelp" class="form-text">
+                <label id="lastName" class="form-text" for="lastName">
                   Last
-                </span>
+                </label>
               </div>
             </div>
 
             <!-- Email Field -->
             <div class="pb-3">
-              <label for="name" class="form-label" style="font-weight: 500;">
+              <label for="email" class="form-label" style="font-weight: 500;">
                 Email Address
                 <span style="color: red;">&#42;</span>
               </label>
-              <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required>
+              <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required autocomplete="email">
             </div>
             <!-- Phone Number -->
             <div class="pb-3">
@@ -304,14 +304,14 @@
                 Phone Number
                 <span style="color: red;">&#42;</span>
               </label>
-              <input type="tel" class="form-control" id="tel" aria-describedby="email" placeholder="xxx-xxx-xxx" name="phone">
+              <input type="tel" class="form-control" id="tel" aria-describedby="email" placeholder="xxx-xxx-xxx" name="phone" autocomplete="tel">
             </div>
             <!-- Additional Comments -->
             <div class="pb-3">
               <label for="comments" class="form-label" style="font-weight: 500; min-width: 100%;">
                 Send Us a Message:
                 <!-- <span style="color: red;">&#42;</span> -->
-                <textarea class="form-control" id="textArea" rows="3" name="message"></textarea>
+                <textarea class="form-control" id="comments" rows="3" name="message"></textarea>
               </label>
             </div>
           <button type="submit" class="cta-button" value="submit">Submit <i class="fa-solid fa-truck-arrow-right" style="color: #fff;"></i></button>
@@ -364,7 +364,7 @@
     </div>
 
     <div class="row d-flex justify-content-center align-items-center w-100">
-      <div class="col text-center">
+      <div class="col text-center text-lg-end">
         <p class="c-white mb-0">Coming Soon: Eastburn Luxury</p>
       </div>
       <div class="col text-center">
@@ -372,7 +372,7 @@
           Privacy Policy
           </a>
       </div>
-      <div class="col text-center">
+      <div class="col text-center text-lg-start">
         <a href="terms_conditions.html" class="c-white">
           Terms and Conditions
         </a>
